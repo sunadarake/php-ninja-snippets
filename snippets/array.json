@@ -41,12 +41,52 @@
     },
     "array_merge": {
         "prefix": [
-            "am",
+            "ame",
             "merge"
         ],
         "body": [
             "array_merge(\\$${1:array}, \\$${2:item})"
         ],
         "description": "array_merge"
+    },
+    "array_map": {
+        "prefix": [
+            "map",
+            "ama"
+        ],
+        "body": [
+            "array_map(function(\\$${1:val}) {${2:CODE} } ,\\$${3:items})"
+        ],
+        "description": "array_map"
+    },
+    "array_filter": {
+        "prefix": [
+            "filter",
+            "afi"
+        ],
+        "body": [
+            "array_filter(\\$${1:items}, function(\\$${2:val}) {${3:CODE} })"
+        ],
+        "description": "array_filter"
+    },
+    "array_reduce": {
+        "prefix": [
+            "reduce",
+            "are"
+        ],
+        "body": [
+            "array_reduce(\\$${1:items}, function(\\$${2:val}) {${3:CODE} })"
+        ],
+        "description": "array_reduce"
+    },
+    "array_unique": {
+        "prefix": [
+            "unique",
+            "auni"
+        ],
+        "body": [
+            "array_unique(\\$${1:items})"
+        ],
+        "description": "array_unique"
     }
 }
