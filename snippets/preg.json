@@ -1,0 +1,23 @@
+{
+    "preg_replace": {
+        "prefix": "pr",
+        "body": [
+            "preg_replace(${1:$search}, ${2:$replace}, ${3:$subject})"
+        ],
+        "description": "preg_replace"
+    },
+    "preg_match": {
+        "prefix": "pm",
+        "body": [
+            "preg_match(${1:$pattern}, ${2:$replace}, ${3:$matches})"
+        ],
+        "description": "preg_match"
+    },
+    "preg_match_all": {
+        "prefix": "pma",
+        "body": [
+            "preg_match_all(${1:$pattern}, ${2:$replace}, ${3:$matches})"
+        ],
+        "description": "preg_match_all"
+    }
+}

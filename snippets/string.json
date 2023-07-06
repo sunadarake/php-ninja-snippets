@@ -1,0 +1,16 @@
+{
+    "str_contains": {
+        "prefix": "sc",
+        "body": [
+            "str_contains(\\$${1:haystack}, \\$${2:needle})"
+        ],
+        "description": "str_contains"
+    },
+    "str_replace": {
+        "prefix": "sr",
+        "body": [
+            "str_replace(${1:$search}, ${2:$replace}, ${3:$subject})"
+        ],
+        "description": "str_replace"
+    }
+}

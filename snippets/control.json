@@ -1,39 +1,6 @@
 {
-    "If ... endif": {
-        "prefix": "ifen",
-        "body": [
-            "if (${1:condition}):",
-            "\t${0:# code...}",
-            "endif;"
-        ],
-        "description": "If endif block"
-    },
-    "If ... else ... endif": {
-        "prefix": "ifelen",
-        "body": [
-            "if (${1:condition}):",
-            "\t${2:# code...}",
-            "else:",
-            "\t${0:# code...}",
-            "endif;"
-        ],
-        "description": "If else endif block"
-    },
-    "If ... elseif ... else ... endif": {
-        "prefix": "ifelifen",
-        "body": [
-            "if (${1:condition}):",
-            "\t${2:# code...}",
-            "elseif (${3:condition}):",
-            "\t${4:# code...}",
-            "else:",
-            "\t${0:# code...}",
-            "endif;"
-        ],
-        "description": "If elseif else endif block"
-    },
     "If block": {
-        "prefix": "ifb",
+        "prefix": "if",
         "body": [
             "if (${1:condition}) {",
             "\t${0:# code...}",

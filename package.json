@@ -53,10 +53,6 @@
             },
             {
                 "language": "php",
-                "path": "./snippets/function.php5.json"
-            },
-            {
-                "language": "php",
                 "path": "./snippets/globalvar.json"
             },
             {
@@ -69,67 +65,15 @@
             },
             {
                 "language": "php",
-                "path": "./snippets/method.php5.json"
-            },
-            {
-                "language": "php",
                 "path": "./snippets/statement.json"
             },
             {
                 "language": "php",
-                "path": "./snippets/tag.json"
+                "path": "./snippets/string.json"
             },
             {
-                "language": "html",
-                "path": "./snippets/tag.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/array.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/class.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/control.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/error.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/function.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/function.php5.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/globalvar.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/loop.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/method.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/method.php5.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/statement.json"
-            },
-            {
-                "language": "plaintext",
-                "path": "./snippets/tag.json"
+                "language": "php",
+                "path": "./snippets/preg.json"
             }
         ]
     }

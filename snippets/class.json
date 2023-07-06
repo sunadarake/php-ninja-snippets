@@ -1,6 +1,9 @@
 {
     "Class": {
-        "prefix": "cl",
+        "prefix": [
+            "class",
+            "cls"
+        ],
         "body": [
             "class ${1:ClassName}",
             "{",
@@ -10,7 +13,10 @@
         "description": "PHP Class block"
     },
     "Class extends": {
-        "prefix": "clx",
+        "prefix": [
+            "clsex",
+            "class_extends"
+        ],
         "body": [
             "class ${1:ClassName} extends ${2:MotherClass}",
             "{",
@@ -20,7 +26,10 @@
         "description": "PHP Class extends block"
     },
     "Class implements": {
-        "prefix": "cli",
+        "prefix": [
+            "clsim",
+            "class_implements"
+        ],
         "body": [
             "class ${1:ClassName} implements ${2:Interfaces}",
             "{",

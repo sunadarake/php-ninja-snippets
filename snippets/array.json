@@ -1,33 +1,52 @@
 {
-    "Array": {
-        "prefix": "arr",
-        "body": [
-            "[${1:value}, ${2:value}, $3];"
+    "array_push": {
+        "prefix": [
+            "apu",
+            "push"
         ],
-        "description": "Array [] block"
+        "body": [
+            "array_push(\\$${1:array}, \\$${2:item})"
+        ],
+        "description": "array_push"
     },
-    "Array key ... value": {
-        "prefix": "ark",
-        "body": [
-            "[",
-            "\t'${1:key}' => ${2:value},",
-            "\t'${3:key}' => ${4:value},$5",
-            "]"
+    "array_shift": {
+        "prefix": [
+            "as",
+            "shift"
         ],
-        "description": "Array [] key => value block"
+        "body": [
+            "array_shift(\\$${1:array})"
+        ],
+        "description": "array_shift"
     },
-    "Key ... value": {
-        "prefix": "kv",
-        "body": [
-            "'${1:key}' => ${2:value},"
+    "array_pop": {
+        "prefix": [
+            "apo",
+            "pop"
         ],
-        "description": "key => value statement"
+        "body": [
+            "array_pop(\\$${1:array})"
+        ],
+        "description": "array_pop"
     },
-    "Array ... value": {
-        "prefix": "va",
-        "body": [
-            "${1:value}, "
+    "array_unshift": {
+        "prefix": [
+            "aus",
+            "unshift"
         ],
-        "description": "Array value statement"
+        "body": [
+            "array_unshift(\\$${1:array}, \\$${2:item})"
+        ],
+        "description": "array_unshift"
+    },
+    "array_merge": {
+        "prefix": [
+            "am",
+            "merge"
+        ],
+        "body": [
+            "array_merge(\\$${1:array}, \\$${2:item})"
+        ],
+        "description": "array_merge"
     }
 }

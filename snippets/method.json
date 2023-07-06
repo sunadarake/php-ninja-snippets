@@ -1,40 +1,23 @@
 {
     "Class constructor": {
-        "prefix": "pubc",
+        "prefix": [
+            "pubc",
+            "construct"
+        ],
         "body": [
-            "public function __construct(${1:Type} \\$${2:args})",
+            "public function __construct(${1:args})",
             "{",
-            "\t${0:# code...}",
+            "\t${2:# code...}",
             "}"
         ],
         "description": "Class public constructor block"
     },
-    "Class private constructor": {
-        "prefix": "pric",
-        "body": [
-            "private function __construct(${1:Type} \\$${2:args})",
-            "{",
-            "\t${0:# code...}",
-            "}"
-        ],
-        "description": "Class private constructor block"
-    },
-    "Class protected constructor": {
-        "prefix": "proc",
-        "body": [
-            "protected function __construct(${1:Type} \\$${2:args})",
-            "{",
-            "\t${0:# code...}",
-            "}"
-        ],
-        "description": "Class protected constructor block"
-    },
     "Private method": {
         "prefix": "prif",
         "body": [
-            "private function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "private function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Private method block"
@@ -42,9 +25,9 @@
     "Private static method": {
         "prefix": "prisf",
         "body": [
-            "private static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "private static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Private static method block"
@@ -52,9 +35,9 @@
     "Final private method": {
         "prefix": "fprif",
         "body": [
-            "final private function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final private function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final private method block"
@@ -62,9 +45,9 @@
     "Final private static method": {
         "prefix": "fprisf",
         "body": [
-            "final private static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final private static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final private static method block"
@@ -72,9 +55,9 @@
     "Protected method": {
         "prefix": "prof",
         "body": [
-            "protected function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "protected function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Protected method block"
@@ -82,9 +65,9 @@
     "Protected static method": {
         "prefix": "prosf",
         "body": [
-            "protected static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "protected static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Protected static method block"
@@ -92,9 +75,9 @@
     "Final protected method": {
         "prefix": "fprof",
         "body": [
-            "final protected function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final protected function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final protected method block"
@@ -102,9 +85,9 @@
     "Final protected static method": {
         "prefix": "fprosf",
         "body": [
-            "final protected static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final protected static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final protected static method block"
@@ -112,23 +95,23 @@
     "Abstract protected method": {
         "prefix": "aprof",
         "body": [
-            "abstract protected function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void};"
+            "abstract protected function ${1:methodName}( ${2:args})${3:: void};"
         ],
         "description": "Abstract protected method statement"
     },
     "Abstract protected static method": {
         "prefix": "aprosf",
         "body": [
-            "abstract protected static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void};"
+            "abstract protected static function ${1:methodName}( ${2:args})${3:: void};"
         ],
         "description": "Abstract protected static method statement"
     },
     "Public method": {
         "prefix": "pubf",
         "body": [
-            "public function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "public function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Public method block"
@@ -136,9 +119,9 @@
     "Public static method": {
         "prefix": "pubsf",
         "body": [
-            "public static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "public static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Public static method block"
@@ -146,9 +129,9 @@
     "Final public method": {
         "prefix": "fpubf",
         "body": [
-            "final public function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final public function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final public method block"
@@ -156,9 +139,9 @@
     "Final public static method": {
         "prefix": "fpubsf",
         "body": [
-            "final public static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void}",
+            "final public static function ${1:methodName}( ${2:args})${3:: void}",
             "{",
-            "\t${0:# code...}",
+            "\t${4:# code...}",
             "}"
         ],
         "description": "Final public static method block"
@@ -166,14 +149,14 @@
     "Abstract public method": {
         "prefix": "apubf",
         "body": [
-            "abstract public function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void};"
+            "abstract public function ${1:methodName}( ${2:args})${3:: void};"
         ],
         "description": "Abstract public method statement"
     },
     "Abstract public static method": {
         "prefix": "apubsf",
         "body": [
-            "abstract public static function ${1:methodName}(${2:Type} \\$${3:args}): ${4:void};"
+            "abstract public static function ${1:methodName}( ${2:args})${3:: void};"
         ],
         "description": "Abstract public static method statement"
     }
