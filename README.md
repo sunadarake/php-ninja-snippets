@@ -32,7 +32,7 @@ Some snippets have multiple triggers specified.
 | are, reduce | array_reduce($array, function($val) { CODE }) |
 | auni, unique | array_unique($array) |
 
-###　Class
+### Class
 
 | Snippets | Output |
 | --- | --- |
