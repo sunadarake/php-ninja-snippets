@@ -45,7 +45,7 @@
             "merge"
         ],
         "body": [
-            "array_merge(\\$${1:array}, \\$${2:item})"
+            "array_merge(\\$${1:array}, \\$${2:array})"
         ],
         "description": "array_merge"
     },
@@ -65,7 +65,7 @@
             "afi"
         ],
         "body": [
-            "array_filter(\\$${1:items}, function(\\$${2:val}) {${3:CODE} })"
+            "array_filter(\\$${1:array}, function(\\$${2:val}) {${3:CODE} })"
         ],
         "description": "array_filter"
     },
@@ -75,7 +75,7 @@
             "are"
         ],
         "body": [
-            "array_reduce(\\$${1:items}, function(\\$${2:val}) {${3:CODE} })"
+            "array_reduce(\\$${1:array}, function(\\$${2:val}) {${3:CODE} })"
         ],
         "description": "array_reduce"
     },
@@ -85,7 +85,7 @@
             "auni"
         ],
         "body": [
-            "array_unique(\\$${1:items})"
+            "array_unique(\\$${1:array})"
         ],
         "description": "array_unique"
     }
