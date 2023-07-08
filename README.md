@@ -36,50 +36,50 @@ Some snippets have multiple triggers specified.
 
 | Snippets | Output |
 | --- | --- |
-| class, cls | class ClassName{# code...} |
-| clsex, class_extends | class ClassName extends MotherClass{# code...} |
-| clsim, class_implements | class ClassName implements Interfaces{# code...} |
-| clxi | class ClassName extends MotherClass implements Interfaces{# code...} |
-| acl | abstract class ClassName{# code...} |
-| aclx | abstract class ClassName extends MotherClass{# code...} |
-| acli | abstract class ClassName implements Interfaces{# code...} |
-| aclxi | abstract class ClassName extends MotherClass implements Interfaces{# code...} |
-| fcl | final class ClassName{# code...} |
-| fclx | final class ClassName extends MotherClass{# code...} |
-| fcli | final class ClassName implements Interfaces{# code...} |
-| fclxi | final class ClassName extends MotherClass implements Interfaces{# code...} |
-| in | interface InterfaceName{# code...} |
-| inx | interface InterfaceName extends Interfaces{# code...} |
-| trt | trait TraitName{# code...} |
+| class, cls | class ClassName{ } |
+| clsex, class_extends | class ClassName extends MotherClass{ } |
+| clsim, class_implements | class ClassName implements Interfaces{ } |
+| clxi | class ClassName extends MotherClass implements Interfaces{ } |
+| acl | abstract class ClassName{ } |
+| aclx | abstract class ClassName extends MotherClass{ } |
+| acli | abstract class ClassName implements Interfaces{ } |
+| aclxi | abstract class ClassName extends MotherClass implements Interfaces{ } |
+| fcl | final class ClassName{ } |
+| fclx | final class ClassName extends MotherClass{ } |
+| fcli | final class ClassName implements Interfaces{ } |
+| fclxi | final class ClassName extends MotherClass implements Interfaces{ } |
+| in | interface InterfaceName{ } |
+| inx | interface InterfaceName extends Interfaces{ } |
+| trt | trait TraitName{ } |
 
 ### If Switch Ternary
 
 | Snippets | Output |
 | --- | --- |
-| if | if (condition) {# code...} |
-| ifel | if (condition) {# code...} else {# code...} |
-| ifelif | if (condition) {# code...} elseif (condition) {# code...} else {# code...} |
-| sw | switch ($variable) {case 'label':# code...break;case 'label':# code...break;$6default:# code...break;} |
-| cs | case 'label':# code...break; |
+| if | if (condition) { } |
+| ifel | if (condition) { } else { } |
+| ifelif | if (condition) { } elseif (condition) { } else { } |
+| sw | switch ($variable) {case 'label': break;case 'label': break;$6default: break;} |
+| cs | case 'label': break; |
 | tern | condition ? if_true : if_false; |
 
 ### Error
 
 | Snippets | Output |
 | --- | --- |
-| tryc | try {# code...} catch (\Throwable $e) {# code...} |
-| tryf | try {# code...} catch (\Throwable $e) {# code...} finally {# code...} |
-| cat | catch (\Throwable $e) {# code...} |
-| fy | finally {# code...} |
+| tryc | try { } catch (\Throwable $e) { } |
+| tryf | try { } catch (\Throwable $e) { } finally { } |
+| cat | catch (\Throwable $e) { } |
+| fy | finally { } |
 | thr | throw new SomeException("Error statement"); |
 
 ### Function
 
 | Snippets | Output |
 | --- | --- |
-| fn, func | function func_name($args): void {# code...} |
-| fna | function (Type $args): void {# code...} |
-| fnu | function (Type $args) use ($vars): void {# code...} |
+| fn, func | function func_name($args): void { } |
+| fna | function (Type $args): void { } |
+| fnu | function (Type $args) use ($vars): void { } |
 
 ### Global Variables
 
@@ -99,31 +99,31 @@ Some snippets have multiple triggers specified.
 
 | Snippets | Output |
 | --- | --- |
-| fora | foreach ($items as $item) {# code...} |
-| forh | foreach ($items as $key => $item) {# code...} |
-| for | for ($i = 0; $i < $limit; $i++) {# code...} |
-| wl | while ($var <= $limit) {# code...} |
-| dowl | do {# code...} while ($var <= $limit); |
+| fora | foreach ($items as $item) { } |
+| forh | foreach ($items as $key => $item) { } |
+| for | for ($i = 0; $i < $limit; $i++) { } |
+| wl | while ($var <= $limit) { } |
+| dowl | do { } while ($var <= $limit); |
 
 ### Method
 
 | Snippets | Output |
 | --- | --- |
-| pubc, construct | public function __construct($args){# code...} |
-| prif | private function methodName(args): void{# code...} |
-| prisf | private static function methodName(args): void{# code...} |
-| fprif | final private function methodName(args): void{# code...} |
-| fprisf | final private static function methodName(args): void{# code...} |
-| prof | protected function methodName(args): void{# code...} |
-| prosf | protected static function methodName(args): void{# code...} |
-| fprof | final protected function methodName(args): void{# code...} |
-| fprosf | final protected static function methodName(args): void{# code...} |
+| pubc, construct | public function __construct($args){ } |
+| prif | private function methodName(args): void{ } |
+| prisf | private static function methodName(args): void{ } |
+| fprif | final private function methodName(args): void{ } |
+| fprisf | final private static function methodName(args): void{ } |
+| prof | protected function methodName(args): void{ } |
+| prosf | protected static function methodName(args): void{ } |
+| fprof | final protected function methodName(args): void{ } |
+| fprosf | final protected static function methodName(args): void{ } |
 | aprof | abstract protected function methodName(args): void; |
 | aprosf | abstract protected static function methodName(args): void; |
-| pubf | public function methodName(args): void{# code...} |
-| pubsf | public static function methodName(args): void{# code...} |
-| fpubf | final public function methodName(args): void{# code...} |
-| fpubsf | final public static function methodName(args): void{# code...} |
+| pubf | public function methodName(args): void{ } |
+| pubsf | public static function methodName(args): void{ } |
+| fpubf | final public function methodName(args): void{ } |
+| fpubsf | final public static function methodName(args): void{ } |
 | apubf | abstract public function methodName(args): void; |
 | apubsf | abstract public static function methodName(args): void; |
 
