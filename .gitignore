@@ -2,7 +2,6 @@
 *.orig
 *.php
 .vscode/**
-*.vsix
 
 # Dir
 node_modules
