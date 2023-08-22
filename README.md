@@ -11,7 +11,7 @@ Thanks <a href="https://github.com/h4kst3r/php-awesome-snippets" target="_blank"
 ## How to Install
 
 ```
-curl https://github.com/sunadarake/php-ninja-snippets/raw/main/php-ninja-snippets-0.0.1.vsix -o php-ninja-snippets-0.0.1.vsix
+curl -fsSL https://github.com/sunadarake/php-ninja-snippets/raw/main/php-ninja-snippets-0.0.1.vsix > php-ninja-snippets-0.0.1.vsix
 code --install-extension php-ninja-snippets-0.0.1.vsix
 
 ```
