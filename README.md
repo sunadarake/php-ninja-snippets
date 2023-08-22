@@ -8,6 +8,15 @@ This plugin was created by forking **PHP Awesome Snippets** and adding custom sn
 
 Thanks <a href="https://github.com/h4kst3r/php-awesome-snippets" target="_blank">h4kst3r/php-awesome-snippets</a> !!!
 
+## How to Install
+
+```
+curl https://github.com/sunadarake/php-ninja-snippets/raw/main/php-ninja-snippets-0.0.1.vsix -o php-ninja-snippets-0.0.1.vsix
+code --install-extension php-ninja-snippets-0.0.1.vsix
+
+```
+
+
 ## Differences from PHP Awesome Snippets
 
 We have added snippets for commonly used PHP functions that can be tedious to type. For example, we have added snippets for functions such as `array_shift`, `preg_match`, and `str_contains`.
